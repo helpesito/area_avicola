@@ -6,6 +6,8 @@ const   bda = require('../../public/bd/actividades.json'),
         bdl = require('../../public/bd/lotes.json'),
         bdu = require('../../public/bd/usuarios.json')
 
+const verificarCampos = require('../middleware/actiMiddleware')
+
 
 
 
@@ -74,29 +76,13 @@ actiRouter.get('/api/usuario', async (req, resp) => {
     }
 });
 
-actiRouter.post('/api/actividades', async (req,resp) =>{
+actiRouter.post('/api/actividades', verificarCampos, async (req,resp) =>{
     try {
-        const shorterUuid = uuidv4().substring(0, 8)
-        const nuevaActividad = {
-            id_actividad: shorterUuid,
-            fecha : req.body.fecha,
-            hora : req.body.hora,
-            id_lote : req.body.id_lote,
-            id_usuario : req.body.id_usuario,
-            agua : req.body.agua,
-            huevos : req.body.huevos,
-            alimento : req.body.alimento,
-            id_vacuna : req.body.id_vacuna
-        }
-            
-        if (!nuevaActividad.agua || !nuevaActividad.huevos || !nuevaActividad.alimento || !nuevaActividad.id_vacuna) {
-            return resp.status(400).send("Debe ingresar todos los datos");
-        }
-            bda.push(nuevaActividad)
+            bda.push(req.nuevaActividad)
 
             fs.writeFileSync('./public/bd/actividades.json', JSON.stringify(bda, null, 2));
 
-            resp.status(201).json(nuevaActividad);
+            resp.status(201).json(req.nuevaActividad);
 
             } catch (error) {
                 // Capturar y manejar cualquier error que ocurra durante la inserción
