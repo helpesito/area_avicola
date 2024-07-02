@@ -6,8 +6,6 @@ const   bda = require('../../public/bd/actividades.json'),
         bdl = require('../../public/bd/lotes.json'),
         bdu = require('../../public/bd/usuarios.json')
 
-const verificarCampos = require('../middleware/actiMiddleware')
-
 
 
 
@@ -75,6 +73,31 @@ actiRouter.get('/api/usuario', async (req, resp) => {
         resp.status(500).json({ error: 'Error al obtener usuario' });
     }
 });
+
+
+function verificarCampos (req, resp, next) {
+    const { fecha, hora, id_lote, id_usuario, agua, huevos, alimento, id_vacuna } = req.body;
+
+    if (!agua && !huevos && !alimento && !id_vacuna) {
+        return resp.status(400).send('Debe ingresar al menos uno de los campos: agua, huevos, alimento o id_vacuna');
+    }
+
+    req.nuevaActividad = {
+        id_actividad: uuidv4().substring(0, 8),
+        fecha,
+        hora,
+        id_lote,
+        id_usuario,
+        agua,
+        huevos,
+        alimento,
+        id_vacuna
+    };
+
+    next();
+
+}
+
 
 actiRouter.post('/api/actividades', verificarCampos, async (req,resp) =>{
     try {

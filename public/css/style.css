@@ -6,9 +6,17 @@
     user-select: none;
   }
   
-  .toggle_si{
-    height: 100vh;
+
+
+
+  @media (max-width: 1200px) {
+    .contendor_main{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
   }
+
 
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
@@ -16,8 +24,10 @@
       
     }
     .toggle_si{
-      height: none;
+      height: 100vh
     }
+
+
   }
 
   .b-example-divider {
