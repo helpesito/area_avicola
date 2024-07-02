@@ -82,16 +82,16 @@ noveRouter.post('/api/novedad', async (req, resp) =>{
 
         const lote = bdlote.find(lote => lote.id_lotes === nuevaNovedad.id_lote)
     
-        if (typeof lote.cantidad_aves !== 'undefined') {
-            // Actualizar la cantidad de aves en función del tipo de novedad
-            if (nuevaNovedad.id_tipo_novedad === 4) {
-                lote.cantidad_aves = lote.cantidad_aves + nuevaNovedad.cantidad;
-            } else {
-                lote.cantidad_aves = lote.cantidad_aves - nuevaNovedad.cantidad;
-            }
-        } else {
-            return resp.status(400).send('Error en la petición: Propiedad cantidad_aves no encontrada en el lote');
-        }
+        // if (typeof lote.cantidad_aves !== 'undefined') {
+        //     // Actualizar la cantidad de aves en función del tipo de novedad
+        //     if (nuevaNovedad.id_tipo_novedad === 4) {
+        //         lote.cantidad_aves = lote.cantidad_aves + nuevaNovedad.cantidad;
+        //     } else {
+        //         lote.cantidad_aves = lote.cantidad_aves - nuevaNovedad.cantidad;
+        //     }
+        // } else {
+        //     return resp.status(400).send('Error en la petición: Propiedad cantidad_aves no encontrada en el lote');
+        // }
 
 
         if (!lote) {
