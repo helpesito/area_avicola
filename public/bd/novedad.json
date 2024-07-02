@@ -1,0 +1,34 @@
+[
+  {
+    "id_novedad": 1,
+    "id_lote": 1,
+    "id_tipo_novedad": 1,
+    "id_usuario": 1,
+    "cantidad": 3,
+    "observacion": "muerte por enfermedad"
+  },
+  {
+    "id_novedad": 2,
+    "id_lote": 2,
+    "id_tipo_novedad": 3,
+    "id_usuario": 3,
+    "cantidad": 20,
+    "observacion": "sacrificio para venta"
+  },
+  {
+    "id_novedad": "6cb9f11f",
+    "id_lote": 3,
+    "id_tipo_novedad": 2,
+    "id_usuario": 2,
+    "cantidad": 2,
+    "observacion": "2"
+  },
+  {
+    "id_novedad": "60b4c0c9",
+    "id_lote": 3,
+    "id_tipo_novedad": 4,
+    "id_usuario": 1,
+    "cantidad": 2,
+    "observacion": "2"
+  }
+]

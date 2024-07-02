@@ -1,0 +1,14 @@
+[
+    {
+        "id_vacuna": 1,
+        "vacuna": "viruela aviar"
+    },
+    {
+        "id_vacuna": 2,
+        "vacuna": "newcastle"
+    },
+    {
+        "id_vacuna": 3,
+        "vacuna": "marek"
+    }
+]

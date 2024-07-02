@@ -1,0 +1,14 @@
+[
+    {
+        "id_tipo_usuario": 1,
+        "tipo_usuario": "aprendiz"
+    },
+    {
+        "id_tipo_usuario": 2,
+        "tipo_usuario": "instructor"
+    },
+    {
+        "id_tipo_usuario": 3,
+        "tipo_usuario": "trabajador"
+    }
+]

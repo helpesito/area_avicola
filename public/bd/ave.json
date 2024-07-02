@@ -1,0 +1,17 @@
+[
+    {
+        "id_ave": 1,
+        "tipo_ave": "ponedora criolla",
+        "color": "blanca"
+    },
+    {
+        "id_ave": 2,
+        "tipo_ave": "pollo",
+        "color": "blanco"
+    },
+    {
+        "id_ave": 3,
+        "tipo_ave": "ponedora",
+        "color": "amarillo"
+    }
+]

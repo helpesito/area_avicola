@@ -1,0 +1,14 @@
+
+
+####
+POST http://localhost:7288/api/novedad
+Content-Type: application/json
+
+{
+        "id_novedad": 3,
+        "id_lote": 3,
+        "id_tipo_novedad": 3,
+        "id_usuario": 3,
+        "cantidad": 20,
+        "observacion" : "xd"
+}

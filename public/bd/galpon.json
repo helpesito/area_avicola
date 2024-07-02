@@ -1,0 +1,14 @@
+[
+    {
+        "id_galpon": 7,
+        "id_usuario": 2,
+        "medida": 45,
+        "capacidad": 500
+    },
+    {
+        "id_galpon": 8,
+        "id_usuario": 3,
+        "medida": 50,
+        "capacidad": 550
+    }
+]

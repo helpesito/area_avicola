@@ -1,0 +1,26 @@
+[
+  {
+    "id_lote": 1,
+    "id_lotes": 1,
+    "id_ave": 2,
+    "fecha_ingreso": "2024-05-08",
+    "cantidad_aves": 50,
+    "edad": 10
+  },
+  {
+    "id_lote": 2,
+    "id_lotes": 2,
+    "id_ave": 3,
+    "fecha_ingreso": "2024-05-03",
+    "cantidad_aves": 50,
+    "edad": 8
+  },
+  {
+    "id_lote": 3,
+    "id_lotes": 3,
+    "id_ave": 1,
+    "fecha_ingreso": "2024-05-02",
+    "cantidad_aves": 150,
+    "edad": 12
+  }
+]

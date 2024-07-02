@@ -1,0 +1,23 @@
+[
+    {
+        "id_usuario": 1,
+        "id_tipo_usuario": 1,
+        "nombres": "pepito",
+        "apellidos": "gomez",
+        "identificacion": "1002569856"
+    },
+    {
+        "id_usuario": 2,
+        "id_tipo_usuario": 2,
+        "nombres": "lionel",
+        "apellidos": "messi",
+        "identificacion": "12369658"
+    },
+    {
+        "id_usuario": 3,
+        "id_tipo_usuario": 3,
+        "nombres": "raul",
+        "apellidos": "jackson",
+        "identificacion": "777777"
+    }
+]
